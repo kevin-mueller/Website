@@ -39,11 +39,12 @@ else
 
 @code {
     public ProjectComponent() { }
-    public ProjectComponent(string ProjectTitle, string ProjectDescription, bool TextRight)
+    public ProjectComponent(string ProjectTitle, string ProjectDescription, bool TextRight, string ImageSrc)
     {
         this.ProjectTitle = ProjectTitle;
         this.ProjectDescription = ProjectDescription;
         this.TextRight = TextRight;
+        this.ImageSrc = ImageSrc;
     }
 
     //Keep them public because the component is created dynamically as well as in markup
@@ -55,4 +56,7 @@ else
 
     [Parameter]
     public bool TextRight { get; set; }
+
+    [Parameter]
+    public string ImageSrc { get; set; }
 }

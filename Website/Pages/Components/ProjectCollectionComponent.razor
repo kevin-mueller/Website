@@ -1,0 +1,27 @@
+﻿@*
+    Interface:
+    - Featured Project | Type = ProjectComponent
+    - Other Projects   | Type List<ProjectComponent>
+
+*@
+<section id="projects" class="projects-section bg-light">
+    <div class="container">
+        <FeaturedProjectComponent ProjectDescription="@FeaturedProject.ProjectDescription" ProjectTitle="@FeaturedProject.ProjectTitle"/>
+        @if (OtherProjects != null)
+        {
+            @foreach (var proj in OtherProjects)
+            {
+                <ProjectComponent ProjectDescription="@proj.ProjectDescription" ProjectTitle="@proj.ProjectTitle" TextRight="@proj.TextRight" />
+            }
+        }
+    </div>
+</section>
+
+
+@code {
+    [Parameter]
+    public FeaturedProjectComponent FeaturedProject { get; set; }
+
+    [Parameter]
+    public List<ProjectComponent> OtherProjects { get; set; }
+}

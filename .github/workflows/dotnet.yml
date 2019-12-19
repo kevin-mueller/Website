@@ -1,4 +1,4 @@
-name: .NET CLI
+name: .NET Build
 
 on: [push]
 

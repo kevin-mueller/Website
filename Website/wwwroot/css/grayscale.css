@@ -1,91 +1,46 @@
 #mainNav {
     min-height: 56px;
-    background-color: #fff;
+    background-color: #0a0a0a;
 }
 
-    #mainNav .navbar-toggler {
-        font-size: 80%;
-        padding: 0.75rem;
-        color: #64a19d;
-        border: 1px solid #64a19d;
-    }
+#mainNav .navbar-toggler {
+    font-size: 80%;
+    padding: 0.75rem;
+    color: #64a19d;
+    border: 1px solid #64a19d;
+}
 
-        #mainNav .navbar-toggler:focus {
-            outline: none;
-        }
+#mainNav .navbar-toggler:focus {
+    outline: none;
+}
 
-    #mainNav .navbar-brand {
-        color: #161616;
-        font-weight: 700;
-        padding: .9rem 0;
-    }
+#mainNav .navbar-brand {
+    color: #dedede;
+    font-weight: 700;
+    padding: .9rem 0;
+    transition: 0.2s;
+}
 
-    #mainNav .navbar-nav .nav-item:hover {
-        color: fade(white, 80%);
-        outline: none;
-        background-color: transparent;
-    }
+#mainNav .navbar-brand:hover {
+    color: #ffffff;
+    font-weight: 700;
+    padding: .9rem 0;
+    transition: 0.2s;
+}
 
-    #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
-        outline: none;
-        background-color: transparent;
-    }
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+    outline: none;
+    background-color: transparent;
+}
 
-@media (min-width: 992px) {
-    #mainNav {
-        padding-top: 0;
-        padding-bottom: 0;
-        border-bottom: none;
-        background-color: transparent;
-        transition: background-color 0.3s ease-in-out;
-    }
+.nav-link {
+    color: #bbbbbb !important;
+    transition: 0.2s !important;
+}
 
-        #mainNav .navbar-brand {
-            padding: .5rem 0;
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        #mainNav .nav-link {
-            transition: none;
-            padding: 2rem 1.5rem;
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-            #mainNav .nav-link:hover {
-                color: rgba(255, 255, 255, 0.75);
-            }
-
-            #mainNav .nav-link:active {
-                color: white;
-            }
-
-        #mainNav.navbar-shrink {
-            background-color: #fff;
-        }
-
-            #mainNav.navbar-shrink .navbar-brand {
-                color: #161616;
-            }
-
-            #mainNav.navbar-shrink .nav-link {
-                color: #161616;
-                padding: 1.5rem 1.5rem 1.25rem;
-                border-bottom: 0.25rem solid transparent;
-            }
-
-                #mainNav.navbar-shrink .nav-link:hover {
-                    color: #64a19d;
-                }
-
-                #mainNav.navbar-shrink .nav-link:active {
-                    color: #467370;
-                }
-
-                #mainNav.navbar-shrink .nav-link.active {
-                    color: #64a19d;
-                    outline: none;
-                    border-bottom: 0.25rem solid #64a19d;
-                }
+.nav-link:hover {
+    color: #ffffff !important;
+    transition: 0.2s !important;
 }
 
 .masthead {
@@ -101,20 +56,20 @@
     background-size: cover;
 }
 
-    .masthead h1 {
-        font-family: 'Varela Round';
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-        letter-spacing: 0.8rem;
-        background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-    }
+.masthead h1 {
+    font-family: 'Varela Round';
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
 
-    .masthead h2 {
-        max-width: 20rem;
-        font-size: 1rem;
-    }
+.masthead h2 {
+    max-width: 20rem;
+    font-size: 1rem;
+}
 
 @media (min-width: 768px) {
     .masthead h1 {
@@ -129,16 +84,16 @@
         padding: 0;
     }
 
-        .masthead h1 {
-            font-size: 6.5rem;
-            line-height: 6.5rem;
-            letter-spacing: 0.8rem;
-        }
+    .masthead h1 {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.8rem;
+    }
 
-        .masthead h2 {
-            max-width: 30rem;
-            font-size: 1.25rem;
-        }
+    .masthead h2 {
+        max-width: 30rem;
+        font-size: 1.25rem;
+    }
 }
 
 .btn {
@@ -155,36 +110,36 @@
     background-color: #64a19d;
 }
 
-    .btn-primary:hover {
-        background-color: #4f837f;
-    }
+.btn-primary:hover {
+    background-color: #4f837f;
+}
 
-    .btn-primary:focus {
-        background-color: #4f837f;
-        color: white;
-    }
+.btn-primary:focus {
+    background-color: #4f837f;
+    color: white;
+}
 
-    .btn-primary:active {
-        background-color: #467370 !important;
-    }
+.btn-primary:active {
+    background-color: #467370 !important;
+}
 
 .about-section {
     padding-top: 10rem;
     background: #212121;
 }
 
-    .about-section p {
-        margin-bottom: 5rem;
-    }
+.about-section p {
+    margin-bottom: 5rem;
+}
 
 .projects-section {
-    background: #f5f5f6;
+    background: #212121;
     padding: 10rem 0;
 }
 
-    .projects-section .featured-text {
-        padding: 2rem;
-    }
+.projects-section .featured-text {
+    padding: 2rem;
+}
 
 @media (min-width: 992px) {
     .projects-section .featured-text {
@@ -203,11 +158,11 @@
         padding: 5rem;
     }
 
-        .projects-section .project-text hr {
-            border-color: #64a19d;
-            border-width: .25rem;
-            width: 30%;
-        }
+    .projects-section .project-text hr {
+        border-color: #64a19d;
+        border-width: .25rem;
+        width: 30%;
+    }
 }
 
 .signup-section {
@@ -219,61 +174,61 @@
     background-size: cover;
 }
 
-    .signup-section .form-inline input {
-        box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-        padding: 1.25rem 2rem;
-        height: auto;
-        font-family: 'Varela Round';
-        font-size: 80%;
-        text-transform: uppercase;
-        letter-spacing: 0.15rem;
-        border: 0;
-    }
+.signup-section .form-inline input {
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    padding: 1.25rem 2rem;
+    height: auto;
+    font-family: 'Varela Round';
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: 0;
+}
 
 .contact-section {
     background: #212121;
     padding: 5rem 0 0;
 }
 
-    .contact-section .card {
-        border: 0;
-        border-bottom: 0.25rem solid #64a19d;
-    }
+.contact-section .card {
+    border: 0;
+    border-bottom: 0.25rem solid #64a19d;
+}
 
-        .contact-section .card h4 {
-            font-size: 0.8rem;
-            font-family: 'Varela Round';
-            text-transform: uppercase;
-            letter-spacing: 0.15rem;
-        }
+.contact-section .card h4 {
+    font-size: 0.8rem;
+    font-family: 'Varela Round';
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
 
-        .contact-section .card hr {
-            border-color: #64a19d;
-            border-width: 0.25rem;
-            width: 3rem;
-        }
+.contact-section .card hr {
+    border-color: #64a19d;
+    border-width: 0.25rem;
+    width: 3rem;
+}
 
-    .contact-section .social {
-        margin-top: 5rem;
-    }
+.contact-section .social {
+    margin-top: 5rem;
+}
 
-        .contact-section .social a {
-            text-align: center;
-            height: 3rem;
-            width: 3rem;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 100%;
-            line-height: 3rem;
-            color: rgba(255, 255, 255, 0.3);
-        }
+.contact-section .social a {
+    text-align: center;
+    height: 3rem;
+    width: 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    line-height: 3rem;
+    color: rgba(255, 255, 255, 0.3);
+}
 
-            .contact-section .social a:hover {
-                color: rgba(255, 255, 255, 0.5);
-            }
+.contact-section .social a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
 
-            .contact-section .social a:active {
-                color: #fff;
-            }
+.contact-section .social a:active {
+    color: #fff;
+}
 
 .footer-section {
     background: #212121
@@ -281,6 +236,7 @@
 
 body {
     font-family: 'Nunito';
+    color: #ffffff;
     letter-spacing: 0.0625em;
 }
 
@@ -288,10 +244,10 @@ a {
     color: #64a19d;
 }
 
-    a:focus, a:hover {
-        text-decoration: none;
-        color: #3c6360;
-    }
+a:focus, a:hover {
+    text-decoration: none;
+    color: #3c6360;
+}
 
 .bg-black {
     background-color: #161616 !important;
@@ -307,4 +263,12 @@ a {
 
 footer {
     padding: 5rem 0;
+}
+
+.projects-separator {
+    border-bottom-color: #ffffff;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    width: 100%;
+    margin-top: 2rem;
 }

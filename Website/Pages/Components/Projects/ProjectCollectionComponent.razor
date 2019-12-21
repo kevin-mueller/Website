@@ -4,24 +4,35 @@
     - Other Projects   | Type List<ProjectComponent>
 
 *@
-<section id="projects" class="projects-section">
+<section id="@Id" class="projects-section">
     <div class="container">
-        <FeaturedProjectComponent ProjectDescription="@FeaturedProject.ProjectDescription" ProjectTitle="@FeaturedProject.ProjectTitle" />
+        <h2>@Title</h2>
+        <FeaturedProjectComponent ProjectDescription="@FeaturedProject.ProjectDescription" ProjectTitle="@FeaturedProject.ProjectTitle"/>
         @if (OtherProjects != null)
         {
             @foreach (var proj in OtherProjects)
             {
-                <ProjectComponent ProjectDescription="@proj.ProjectDescription" ProjectTitle="@proj.ProjectTitle" TextRight="@proj.TextRight" />
+                <ProjectComponent ProjectDescription="@proj.ProjectDescription" ProjectTitle="@proj.ProjectTitle" TextRight="@proj.TextRight"/>
             }
         }
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+            <div class="projects-separator"></div>
+        </div>
     </div>
 </section>
 
 
 @code {
+
     [Parameter]
     public FeaturedProjectComponent FeaturedProject { get; set; }
 
     [Parameter]
     public List<ProjectComponent> OtherProjects { get; set; }
+
+    [Parameter]
+    public string Id { get; set; }
+    
+    [Parameter]
+    public string Title { get; set; }
 }

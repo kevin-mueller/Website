@@ -5,7 +5,7 @@
     <div class="col-xl-4 col-lg-5">
         <div class="featured-text text-center text-lg-left">
             <h4>@ProjectTitle</h4>
-            <p class="text-black-50 mb-0">@ProjectDescription</p>
+            <p class="text-white-50 mb-0">@ProjectDescription</p>
         </div>
     </div>
 </div>
@@ -13,10 +13,10 @@
 
 @code {
     public FeaturedProjectComponent() { } //empty constructor is needed
-    public FeaturedProjectComponent(string ProjectTitle, string ProjectDescription)
+    public FeaturedProjectComponent(string projectTitle, string projectDescription)
     {
-        this.ProjectTitle = ProjectTitle;
-        this.ProjectDescription = ProjectDescription;
+        this.ProjectTitle = projectTitle;
+        this.ProjectDescription = projectDescription;
     }
 
     [Parameter]

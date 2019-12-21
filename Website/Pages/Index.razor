@@ -1,38 +1,33 @@
 ﻿@page "/"
 
 <div id="page-top">
-    <!-- Header -->
-    <header class="masthead">
-        <div class="container d-flex h-100 align-items-center">
-            <div class="mx-auto text-center">
-                <h1 class="mx-auto my-0 text-uppercase">Lorem Ipsum</h1>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">Lorem Ipsum dolor sit amet.</h2>
-                <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
-            </div>
-        </div>
-    </header>
+    <!-- Software Section -->
+    <ProjectCollectionComponent FeaturedProject="FeaturedSoftwareProject" OtherProjects="OtherSoftwareProjects" Id="software" Title="My Software Projects"/>
 
-    <!-- About Section -->
-    <AboutComponent/>
+    <!-- Music Section -->
+    @* <ProjectCollectionComponent FeaturedProject="FeaturedProject" OtherProjects="OtherSoftwareProjects" id="music"/> *@
 
-    <!-- Projects Section -->
-    <ProjectCollectionComponent FeaturedProject="FeaturedProject" OtherProjects="OtherProjects" />
-
-    <ContactComponent/>    
+    @* <ContactComponent/>*@
 </div>
 
 @code {
-    private FeaturedProjectComponent FeaturedProject;
-    private List<ProjectComponent> OtherProjects;
+    private FeaturedProjectComponent FeaturedSoftwareProject;
+    private List<ProjectComponent> OtherSoftwareProjects;
 
     protected override Task OnInitializedAsync()
     {
-        FeaturedProject = new FeaturedProjectComponent("Project Title passed via Constructor", "This is the description of a featured Project. Please read carefully.");
 
-        OtherProjects = new List<ProjectComponent>();
-        OtherProjects.Add(new ProjectComponent("Project One Title", "Project One Description", false, "img/demo-image-01.jpg"));
-        OtherProjects.Add(new ProjectComponent("Project Two Title", "Project Two Description", true, "img/demo-image-02.jpg"));
+        FeaturedSoftwareProject = new FeaturedProjectComponent("Featured Software Project", "This is the description of a featured Project. Please read carefully.");
+
+        OtherSoftwareProjects = new List<ProjectComponent>
+        {
+            new ProjectComponent("Project One Title", "Project One Description", false, "img/demo-image-01.jpg"),
+            new ProjectComponent("Project Two Title", "Project Two Description", true, "img/demo-image-02.jpg")
+        };
+        
+        
 
         return base.OnInitializedAsync();
     }
+
 }

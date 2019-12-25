@@ -2,17 +2,20 @@
 
 <div id="page-top">
     <!-- Software Section -->
-    <ProjectCollectionComponent FeaturedProject="FeaturedSoftwareProject" OtherProjects="OtherSoftwareProjects" Id="software" Title="My Software Projects"/>
+    <ProjectCollectionComponent FeaturedProject="FeaturedSoftwareProject" OtherProjects="OtherSoftwareProjects" Id="software" Title="My Software Projects" />
 
     <!-- Music Section -->
     @* <ProjectCollectionComponent FeaturedProject="FeaturedProject" OtherProjects="OtherSoftwareProjects" id="music"/> *@
 
     @* <ContactComponent/>*@
+
 </div>
 
 @code {
     private FeaturedProjectComponent FeaturedSoftwareProject;
     private List<ProjectComponent> OtherSoftwareProjects;
+
+    private string testval;
 
     protected override Task OnInitializedAsync()
     {
@@ -20,14 +23,20 @@
         FeaturedSoftwareProject = new FeaturedProjectComponent("Featured Software Project", "This is the description of a featured Project. Please read carefully.");
 
         OtherSoftwareProjects = new List<ProjectComponent>
-        {
+    {
             new ProjectComponent("Project One Title", "Project One Description", false, "img/demo-image-01.jpg"),
             new ProjectComponent("Project Two Title", "Project Two Description", true, "img/demo-image-02.jpg")
         };
-        
-        
-
         return base.OnInitializedAsync();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            testval = await new GitHubWrapper().GetUserRepositories();
+            this.StateHasChanged();
+        }
     }
 
 }

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Diese Datei wird vom Veröffentlichungs-/Paketierungsprozess Ihres Webprojekts verwendet. Sie können das Verhalten dieses Prozesses anpassen,
+indem Sie diese MSBuild-Datei bearbeiten. Weitere Informationen hierzu finden Sie unter https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7e+kF0jDGUiQSJ4Xbjl6VQAAAAACAAAAAAAQZgAAAAEAACAAAACtR06/bbNMYZ/bnzTRxwaGZR3++7Oj+2qsQwaTwTsMhAAAAAAOgAAAAAIAACAAAABkdBLofn84SPOyXw+fkB17x2OiZlHvhIxY8spk5iWr0iAAAAAxhLYoflmPch7NO5KDPyFpqM16wJbeuLnukkT8UtUL50AAAACwR0CdxtWEw2pejWlzRe6+0LN2/dTSVESFPEsepqgTxdtvTWalI/t+eyAOJFiDAtqM8ogbjqRoXQOLrqDsLbln</EncryptedPassword>
+    <_PublishTargetUrl>ftp://178.38.152.178/Website/</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Website.deps.json">
+      <publishTime>12/25/2019 02:12:49</publishTime>
+    </File>
+    <File Include="Website.dll">
+      <publishTime>12/25/2019 02:13:58</publishTime>
+    </File>
+    <File Include="Website.exe">
+      <publishTime>12/25/2019 02:13:58</publishTime>
+    </File>
+    <File Include="Website.pdb">
+      <publishTime>12/25/2019 02:13:58</publishTime>
+    </File>
+    <File Include="Website.runtimeconfig.json">
+      <publishTime>12/24/2019 17:14:43</publishTime>
+    </File>
+    <File Include="Website.Views.dll">
+      <publishTime>12/25/2019 02:13:58</publishTime>
+    </File>
+    <File Include="Website.Views.pdb">
+      <publishTime>12/25/2019 02:13:58</publishTime>
+    </File>
+    <File Include="wwwroot/.gitignore">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/css/grayscale.css">
+      <publishTime>12/21/2019 20:05:10</publishTime>
+    </File>
+    <File Include="wwwroot/css/grayscale.min.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/css/grayscale_BACKUP.css">
+      <publishTime>12/21/2019 18:01:29</publishTime>
+    </File>
+    <File Include="wwwroot/css/grayscale_BACKUP.min.css">
+      <publishTime>12/21/2019 18:01:29</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/FONT-LICENSE">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.eot">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.otf">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.svg">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.ttf">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.woff">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/ICON-LICENSE">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/README.md">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/img/bg-masthead.jpg">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/img/bg-signup.jpg">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/img/demo-image-01.jpg">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/img/demo-image-02.jpg">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/img/ipad.png">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/js/grayscale.js">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/js/grayscale.min.js">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/LICENSE">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/scss/grayscale.scss">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_about.scss">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_buttons.scss">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_contact.scss">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_masthead.scss">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_mixins.scss">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_navbar.scss">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_projects.scss">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_signup.scss">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_variables.scss">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/css/bootstrap-grid.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/css/bootstrap-grid.css.map">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/css/bootstrap-grid.min.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/css/bootstrap-grid.min.css.map">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/css/bootstrap-reboot.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/css/bootstrap-reboot.css.map">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/css/bootstrap-reboot.min.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/css/bootstrap-reboot.min.css.map">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/css/bootstrap.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/css/bootstrap.css.map">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/css/bootstrap.min.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/css/bootstrap.min.css.map">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/js/bootstrap.bundle.js">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/js/bootstrap.bundle.js.map">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/js/bootstrap.bundle.min.js">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/js/bootstrap.bundle.min.js.map">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/js/bootstrap.js">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/js/bootstrap.js.map">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/js/bootstrap.min.js">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/bootstrap/js/bootstrap.min.js.map">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/css/all.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/css/all.min.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/css/brands.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/css/brands.min.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/css/fontawesome.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/css/fontawesome.min.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/css/regular.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/css/regular.min.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/css/solid.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/css/solid.min.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/css/svg-with-js.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/css/svg-with-js.min.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/css/v4-shims.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/css/v4-shims.min.css">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/webfonts/fa-brands-400.eot">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/webfonts/fa-brands-400.svg">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/webfonts/fa-brands-400.ttf">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/webfonts/fa-brands-400.woff">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/webfonts/fa-brands-400.woff2">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/webfonts/fa-regular-400.eot">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/webfonts/fa-regular-400.svg">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/webfonts/fa-regular-400.ttf">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/webfonts/fa-regular-400.woff">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/webfonts/fa-regular-400.woff2">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/webfonts/fa-solid-900.eot">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/webfonts/fa-solid-900.svg">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/webfonts/fa-solid-900.ttf">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/webfonts/fa-solid-900.woff">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/fontawesome-free/webfonts/fa-solid-900.woff2">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/jquery-easing/jquery.easing.compatibility.js">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/jquery-easing/jquery.easing.js">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/jquery-easing/jquery.easing.min.js">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/jquery/jquery.js">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/jquery/jquery.min.js">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/jquery/jquery.min.map">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/jquery/jquery.slim.js">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/jquery/jquery.slim.min.js">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+    <File Include="wwwroot/vendor/jquery/jquery.slim.min.map">
+      <publishTime>12/21/2019 16:10:04</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

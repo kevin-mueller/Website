@@ -15,24 +15,34 @@ namespace Website.Source.API
         private HttpClient _client;
         private const string GITHUB_API_BASE_URL = "https://api.github.com";
         private string _userName;
+
+        private GitCache _cache;
+
         public GitHubWrapper(string username)
         {
             _userName = username;
             _client = new HttpClient();
-            
             _client.DefaultRequestHeaders.Add("User-Agent", "Kevin M. Blazor Server");
         }
 
         public async Task<List<Repository>> GetUserRepositories()
         {
-            var response = await _client.GetAsync(GITHUB_API_BASE_URL + $"/users/{_userName}/repos");
-            if (response.StatusCode != HttpStatusCode.OK)
+            var cache = GitCache.GetCache();
+            
+            if (cache == null || GitCache.ShouldRenewCache())
             {
-                throw new HttpRequestException($"Http Error. HttpStatusCode = {response.StatusCode}");
-            }
+                var response = await _client.GetAsync(GITHUB_API_BASE_URL + $"/users/{_userName}/repos");
+                if (response.StatusCode != HttpStatusCode.OK)
+                {
+                    throw new HttpRequestException($"Http Error. HttpStatusCode = {response.StatusCode}");
+                }
 
-            var jsonRaw = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<List<Repository>>(jsonRaw);
+                var jsonRaw = await response.Content.ReadAsStringAsync();
+                cache = JsonConvert.DeserializeObject<List<Repository>>(jsonRaw);
+                GitCache.WriteCache(cache);
+            }
+            
+            return cache;
         }
     }
 }

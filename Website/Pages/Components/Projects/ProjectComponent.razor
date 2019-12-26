@@ -1,50 +1,21 @@
-﻿@if (!TextRight)
-{
-    <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
-        </div>
-        <div class="col-lg-6">
-            <div class="bg-black text-center h-100 project">
-                <div class="d-flex h-100">
-                    <div class="project-text w-100 my-auto text-center text-lg-left">
-                        <h4 class="text-white">@ProjectTitle</h4>
-                        <p class="mb-0 text-white-50">@ProjectDescription</p>
-                        <hr class="d-none d-lg-block mb-0 ml-0">
-                    </div>
-                </div>
-            </div>
-        </div>
+﻿<a href="#" class="list-group-item list-group-item-action flex-column align-items-start project-item">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">@ProjectTitle</h5>
     </div>
-}
-else
-{
-    <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
-                <div class="d-flex h-100">
-                    <div class="project-text w-100 my-auto text-center text-lg-right">
-                        <h4 class="text-white">@ProjectTitle</h4>
-                        <p class="mb-0 text-white-50">@ProjectDescription</p>
-                        <hr class="d-none d-lg-block mb-0 mr-0">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-}
+    <p class="mb-1">@ProjectDescription</p>
+</a>
+
 
 @code {
-    public ProjectComponent() { }
-    public ProjectComponent(string ProjectTitle, string ProjectDescription, bool TextRight, string ImageSrc)
+
+    public ProjectComponent()
+    {
+    }
+
+    public ProjectComponent(string ProjectTitle, string ProjectDescription)
     {
         this.ProjectTitle = ProjectTitle;
         this.ProjectDescription = ProjectDescription;
-        this.TextRight = TextRight;
-        this.ImageSrc = ImageSrc;
     }
 
     //Keep them public because the component is created dynamically as well as in markup
@@ -59,4 +30,5 @@ else
 
     [Parameter]
     public string ImageSrc { get; set; }
+
 }

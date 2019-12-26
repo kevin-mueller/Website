@@ -1,4 +1,5 @@
 ﻿@page "/"
+@using Website.Data.Models
 
 <div id="page-top">
     <!-- Software Section -->
@@ -15,18 +16,8 @@
     private FeaturedProjectComponent FeaturedSoftwareProject;
     private List<ProjectComponent> OtherSoftwareProjects;
 
-    private string testval;
-
     protected override Task OnInitializedAsync()
     {
-
-        FeaturedSoftwareProject = new FeaturedProjectComponent("Featured Software Project", "This is the description of a featured Project. Please read carefully.");
-
-        OtherSoftwareProjects = new List<ProjectComponent>
-    {
-            new ProjectComponent("Project One Title", "Project One Description", false, "img/demo-image-01.jpg"),
-            new ProjectComponent("Project Two Title", "Project Two Description", true, "img/demo-image-02.jpg")
-        };
         return base.OnInitializedAsync();
     }
 
@@ -34,9 +25,15 @@
     {
         if (firstRender)
         {
-            testval = await new GitHubWrapper().GetUserRepositories();
+            FeaturedSoftwareProject = new FeaturedProjectComponent("Featured Software Project", "This is the description of a featured Project. Please read carefully.");
+            List<Repository> repos = await new GitHubWrapper("Lucky2114").GetUserRepositories();
+
+            OtherSoftwareProjects = new List<ProjectComponent>();
+            foreach (var repo in repos)
+            {
+                OtherSoftwareProjects.Add(new ProjectComponent(repo.Name, repo.Description));
+            }
             this.StateHasChanged();
         }
     }
-
 }

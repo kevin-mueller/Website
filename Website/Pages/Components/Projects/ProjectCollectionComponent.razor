@@ -10,10 +10,12 @@
         <FeaturedProjectComponent ProjectDescription="@FeaturedProject.ProjectDescription" ProjectTitle="@FeaturedProject.ProjectTitle"/>
         @if (OtherProjects != null)
         {
-            @foreach (var proj in OtherProjects)
-            {
-                <ProjectComponent ProjectDescription="@proj.ProjectDescription" ProjectTitle="@proj.ProjectTitle" TextRight="@proj.TextRight"/>
-            }
+            <div class="list-group">
+                @foreach (var proj in OtherProjects)
+                {
+                    <ProjectComponent ProjectDescription="@proj.ProjectDescription" ProjectTitle="@proj.ProjectTitle" TextRight="@proj.TextRight"/>
+                }
+            </div>
         }
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
             <div class="projects-separator"></div>
@@ -32,7 +34,8 @@
 
     [Parameter]
     public string Id { get; set; }
-    
+
     [Parameter]
     public string Title { get; set; }
+
 }

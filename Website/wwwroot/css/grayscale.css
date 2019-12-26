@@ -272,3 +272,24 @@ footer {
     width: 100%;
     margin-top: 2rem;
 }
+
+.project-item {
+    background-color: rgba(0,0,0,0.3) !important;
+    border-color: white !important;
+    color: white !important;
+}
+
+.featured-project-item {
+    background-color: rgba(0,0,0,0.3) !important;
+    border-color: white !important;
+    color: white !important;
+    margin-bottom: 1rem;
+}
+
+.featured-project-item:hover {
+    background-color: rgba(0,0,0, 0.4) !important;
+}
+
+.project-item:hover {
+    background-color: rgba(0,0,0, 0.4) !important;
+}

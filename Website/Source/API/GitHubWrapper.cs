@@ -16,7 +16,6 @@ namespace Website.Source.API
         private const string GITHUB_API_BASE_URL = "https://api.github.com";
         private string _userName;
 
-        private GitCache _cache;
 
         public GitHubWrapper(string username)
         {
